@@ -105,13 +105,13 @@ p{
 	outline: none;
 }
 #keyUp{
-	transform: translate(116.5px,-58px);
+	transform: translate(116px,-58px);
 }
 #keyLeft{
-	transform: translate(-21px, 0px);
+	transform: translate(-23px, 0px);
 }
 #keyRight{
-	transform: translate(21px, 0px);
+	transform: translate(23px, 0px);
 }
 #keyDown{
 	transform: translate(-116.5px, 58px);
