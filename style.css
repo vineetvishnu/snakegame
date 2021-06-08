@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: rgb(21, 36, 105);
+	overflow: hidden;
+}
+
+@keyframes textcolor {
+	0%,100%{ color: #a4fa06;}
+	50%{ color: rgb(241, 14, 14);}	
+}
+h1{
+	position: relative;
+	top: 20px;
+	left: 10px;
+	font-size: 50px;
+	color: #fff;
+	font-family: 'ZCOOL KuaiLe', cursive;
+	text-shadow: 2px 2px 10px black;
+	animation: textcolor 2s ease infinite;
+}
+p{
+	position: relative;
+	top: 30px;
+	left: 10px;
+	font-size: 19px;
+	text-shadow: 2px 2px 10px black;
+	color: #fff;
+}
+.body {
+	background-color: rgb(21, 36, 105);
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+#board{
+	background: linear-gradient(#121a13, #1f3121);
+	width: 70vmin;
+	height: 70vmin;
+	border: 10px inset rgb(194, 57, 57);
+	border-radius: 8px;
+	display: grid;
+	grid-template-rows: repeat(20, 1fr);
+	grid-template-columns: repeat(20, 1fr);
+}
+
+#scoreboard{
+	border-radius: 8px;
+	margin-right: 3%;
+	color: rgb(255, 255, 255);
+	font-family: 'Raleway', sans-serif;
+	font-size: 29px;
+	padding: 6px;
+	width: 120px;
+	border: 2px solid #fff;
+	background-color: rgb(51, 32, 6);
+}
+
+.snake{
+	background-color: #a60823 ;
+	border-radius: 30%;;
+	border: 2px outset rgb(196, 82, 82);
+	box-shadow: 0px 2px 10px rgb(155, 74, 74);
+}
+
+.snakehead{
+	background: linear-gradient(rgb(243, 126, 126), red, rgb(243, 126, 126));
+	border-radius: 30%;
+	transform:  scale(1.2);
+	border: .25vmin solid #fff;
+	box-shadow: 0px 2px 10px rgb(158, 74, 74);
+	
+}
+@keyframes colorchange {
+	0%,100%{ transform:  scale(1.5);}
+	50%{ transform: scale(.6);}	
+}
+.food{
+	background-color: blue;
+	border-radius: 50%;
+	box-shadow: 0px 1px 10px #000;
+	animation: colorchange 1100ms ease infinite;
+}
+
+@media(min-width: 1000px){
+	#scoreboard{
+		left: 85%;
+	}
+}
