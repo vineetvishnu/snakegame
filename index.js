@@ -17,7 +17,7 @@ let food = {
 	y: 4
 };
 let score = 0;
-let speed= 10;
+let speed= 7;
 //functions
 
 
