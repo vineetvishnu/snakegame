@@ -8,7 +8,7 @@
 }
 body{
 	background-color: rgb(21, 36, 105);
-	overflow: hidden;
+	overflow: auto;
 }
 
 @keyframes textcolor {
@@ -44,20 +44,19 @@ p{
 
 #board{
 	position: relative;
-	top: -10%;
+	top: -13%;
 	background: linear-gradient(#121a13, #1f3121);
-	width: 70vmin;
-	height: 70vmin;
+	width: 65vmin;
+	height: 65vmin;
 	border: 10px inset rgb(194, 57, 57);
 	border-radius: 8px;
 	display: grid;
-	grid-template-rows: repeat(20, 1fr);
-	grid-template-columns: repeat(20, 1fr);
+	grid-template-rows: repeat(19, 1fr);
+	grid-template-columns: repeat(19, 1fr);
 }
 
 #scoreboard{
 	border-radius: 8px;
-	margin-right: 3%;
 	color: rgb(255, 255, 255);
 	font-family: 'Raleway', sans-serif;
 	font-size: 29px;
@@ -84,13 +83,45 @@ p{
 	
 }
 @keyframes colorchange {
-	0%,100%{ transform:  scale(1.5);}
-	50%{ transform: scale(.6);}	
+	0%,100%{ transform:  scale(1.2);}
+	50%{ transform: scale(.9);}	
 }
 .food{
 	background-color: blue;
 	border-radius: 50%;
 	box-shadow: 0px 1px 10px #000;
-	animation: colorchange 1100ms ease infinite;
+	animation: colorchange 100ms ease infinite;
 }
 
+#touchkeys{
+	display: none;
+}
+.material-icons{
+	font-size: 50px;
+	color: white;
+	background-color: rgb(36, 29, 29);
+	margin: 13px;
+	border-radius: 50%;
+}
+#keyUp{
+	transform: translate(116.5px,-58px);
+}
+#keyLeft{
+	transform: translate(-21px, 0px);
+}
+#keyRight{
+	transform: translate(21px, 0px);
+}
+#keyDown{
+	transform: translate(-116.5px, 58px);
+}
+
+@media(max-width:769px){
+	
+#touchkeys{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+}
+}
