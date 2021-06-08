@@ -37,13 +37,14 @@ p{
 	background-color: rgb(21, 36, 105);
 	width: 100vw;
 	height: 100vh;
-	display: flex;
-	justify-content: center;
+	display: grid;
+	justify-items: center;
 	align-items: center;
-	
 }
 
 #board{
+	position: relative;
+	top: -13%;
 	background: linear-gradient(#121a13, #1f3121);
 	width: 70vmin;
 	height: 70vmin;
