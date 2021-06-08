@@ -90,7 +90,7 @@ p{
 	background-color: blue;
 	border-radius: 50%;
 	box-shadow: 0px 1px 10px #000;
-	animation: colorchange 100ms ease infinite;
+	animation: colorchange .8s ease infinite;
 }
 
 #touchkeys{
