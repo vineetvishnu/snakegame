@@ -5,21 +5,28 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width = device-width, initial-scale = 1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title> Snake Mania </title>
+	<title>Snake_Mania</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<div id="Gamename">
-	<h1>Snake Mania</h1>
-	<p>Use arrow keys of your keyboard to move the snake.</p>
-</div>
+	<div id="Gamename">
+		<h1>Snake Mania</h1>
+		<p>Use arrow keys of your keyboard to move the snake.</p>
+	</div>
+	
 	<div class="body">
 		<div id="scoreboard">Score: 0</div>
 		<div id="board"></div>
 	</div>
 	
+	<div id="touchkeys" class="touchpad">
+		<input id="keyUp" type="button" class="material-icons" value="keyboard_arrow_up">
+		<input id="keyLeft" type="button" class="material-icons" value="keyboard_arrow_left">
+		<input id="keyRight" type="button" class="material-icons" value="keyboard_arrow_right">
+		<input id="keyDown" type="button" class="material-icons" value="keyboard_arrow_down">
+	</div>
 </body>
 <script src="index.js"></script>
-
 </html>
