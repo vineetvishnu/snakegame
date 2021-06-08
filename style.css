@@ -94,8 +94,3 @@ p{
 	animation: colorchange 1100ms ease infinite;
 }
 
-@media(min-width: 1000px){
-	#scoreboard{
-		left: 85%;
-	}
-}
