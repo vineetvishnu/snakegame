@@ -10,11 +10,11 @@ const movingSound = new Audio('move.mp3');
 
 let lastPaintTime = 0;
 let snakeArr = [
-	{x: 14, y: 15}
+	{x: 12, y: 12}
 ];
 let food = {
-	x: 6,
-	y: 5
+	x: 5,
+	y: 4
 };
 let score = 0;
 let speed= 10;
@@ -33,6 +33,7 @@ function main(ctime) {
 
 }
 
+//function to detect collision
 function Collide(snake){
 	for(let i =1; i< snakeArr.length; i++){
 		//if bump in itself
@@ -40,11 +41,12 @@ function Collide(snake){
 			return true;
 		}
 		//if bump in wall
-		if(snake[0].x >= 20 || snake[0].x <= 0 || snake[0].y>=20 || snake[0].y <=0){
+		if(snake[0].x >= 19 || snake[0].x <= 0 || snake[0].y>=19 || snake[0].y <=0){
 			return true;
 		}
 	}
 }
+
 
 function gameEngine() {
 	//part 1: updating snake array and food
@@ -52,7 +54,7 @@ function gameEngine() {
 	if(Collide(snakeArr)){
 		gameOver.play();
 		inputdir = {x: 0, y: 0};
-		alert(`Game Over! Hit Enter to restart`);
+		alert(`Game Over! Press 'OK' restart`);
 		snakeArr=[{x: 13, y:15}];
 		score = 0;
 	}
@@ -67,7 +69,8 @@ function gameEngine() {
 		food = {x: Math.round(a+ (b-a)* Math.random()) , y: Math.round(a+ (b-a)* Math.random())}
 	}
 
-	//moving the snake
+
+	//Moving the snake
 
 	for(let i= snakeArr.length-2; i>= 0; i--){
 		snakeArr[i+1] = {...snakeArr[i]};
@@ -79,6 +82,7 @@ function gameEngine() {
 	//part 2: display the snake array and food
 
 	// Display the snake
+
 	board.innerHTML = "";
 	snakeArr.forEach((e, index) => {
 		snakeElement = document.createElement('div');
@@ -136,3 +140,33 @@ window.addEventListener('keydown', e =>{
 			break;
 	}
 });
+
+document.getElementById("keyUp").addEventListener("touchstart", touchkeyUp);
+
+function touchkeyUp() {
+	console.log("ArrowUp");
+	inputdir.x = 0;
+	inputdir.y = -1;
+}
+document.getElementById("keyLeft").addEventListener("touchstart", touchkeyLeft);
+
+function touchkeyLeft() {
+	console.log("ArrowLeft");
+	inputdir.x = -1;
+	inputdir.y = 0;
+}
+
+document.getElementById("keyRight").addEventListener("touchstart", touchkeyRight);
+
+function touchkeyRight() {
+	console.log("ArrowRight");
+	inputdir.x = 1;
+	inputdir.y = 0;
+}
+document.getElementById("keyDown").addEventListener("touchstart", touchkeyDown);
+
+function touchkeyDown() {
+	console.log("ArrowDown");
+	inputdir.x = 0;
+	inputdir.y = 1;
+}
