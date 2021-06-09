@@ -107,10 +107,10 @@ p{
 	transform: translate(81px,-58px);
 }
 #keyLeft{
-	transform: translate(-25px, 0px);
+	transform: translate(-33px, 0px);
 }
 #keyRight{
-	transform: translate(25px, 0px);
+	transform: translate(33px, 0px);
 }
 #keyDown{
 	transform: translate(-81px, 58px);
