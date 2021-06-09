@@ -7,7 +7,7 @@
 	padding: 0;
 }
 body{
-	background-color: rgb(4, 26, 119);
+	background-color: rgb(4, 25 , 119);
 	overflow: hidden;
 }
 
@@ -34,7 +34,7 @@ p{
 	color: #fff;
 }
 .body {
-	background-color: rgb(4, 26, 119);
+	background-color: rgb(4, 25, 119);
 	width: 100vw;
 	height: 100vh;
 	display: grid;
@@ -48,8 +48,8 @@ p{
 	background: linear-gradient(#121a13, #1f3121);
 	width: 65vmin;
 	height: 65vmin;
-	border: 10px inset rgb(194, 57, 57);
-	border-radius: 8px;
+	border: 10px groove rgb(194, 57, 57);
+	
 	display: grid;
 	grid-template-rows: repeat(19, 1fr);
 	grid-template-columns: repeat(19, 1fr);
@@ -71,16 +71,17 @@ p{
 
 .snake{
 	background-color: #a60823 ;
-	border-radius: 37%;;
-	border: 2px outset #360911;
+	transform:  rotate(45deg);
+	border-radius: 7px;
+	border: 1.5px solid #000000;
 	box-shadow: 0px 2px 10px rgb(155, 74, 74);
 }
 
 .snakehead{
 	background: linear-gradient(rgb(143, 80, 80), rgb(190, 52, 52), rgb(143, 80, 80));
-	border-radius: 30%;
-	transform:  scale(1.2);
-	border: 2px outset #ffc3cf;
+	transform:  rotate(45deg);
+	border-radius: 7px;
+	border: 2px ridge #ffc3cf;
 	
 }
 @keyframes colorchange {
@@ -119,6 +120,7 @@ p{
 #keyDown{
 	transform: translate(-82.5px, 58.67px);
 }
+
 
 @media(max-width:769px){
 body{
