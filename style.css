@@ -97,6 +97,7 @@ p{
 	display: none;
 }
 .material-icons{
+	border:0;
 	font-size: 55px;
 	color: white;
 	background-color: rgb(36, 29, 29);
@@ -104,18 +105,17 @@ p{
 	outline: none;
 }
 #keyUp{
-	transform: translate(89px,-62px);
+	transform: translate(82.5px,-58.67px);
 }
 #keyLeft{
-	transform: translate(-39px, 0px);
+	transform: translate(-31.5px, 0px);
 }
 #keyRight{
-	transform: translate(39px, 0px);
+	transform: translate(31.5px, 0px);
 }
 #keyDown{
-	transform: translate(-89px, 62px);
+	transform: translate(-82.5px, 58.67px);
 }
-
 
 @media(max-width:769px){
 body{
