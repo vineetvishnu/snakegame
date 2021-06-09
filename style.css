@@ -100,22 +100,22 @@ p{
 	font-size: 50px;
 	color: white;
 	background-color: rgb(36, 29, 29);
-	margin: 13px;
 	border-radius: 5px;
 	outline: none;
 }
 #keyUp{
-	transform: translate(117px,-58px);
+	transform: translate(81px,-58px);
 }
 #keyLeft{
-	transform: translate(-23px, 0px);
+	transform: translate(-25px, 0px);
 }
 #keyRight{
-	transform: translate(23px, 0px);
+	transform: translate(25px, 0px);
 }
 #keyDown{
-	transform: translate(-117px, 58px);
+	transform: translate(-81px, 58px);
 }
+
 
 @media(max-width:769px){
 body{
