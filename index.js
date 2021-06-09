@@ -144,6 +144,7 @@ window.addEventListener('keydown', e =>{
 document.getElementById("keyUp").addEventListener("touchstart", touchkeyUp);
 
 function touchkeyUp() {
+	movingSound.play();
 	console.log("ArrowUp");
 	inputdir.x = 0;
 	inputdir.y = -1;
@@ -151,6 +152,7 @@ function touchkeyUp() {
 document.getElementById("keyLeft").addEventListener("touchstart", touchkeyLeft);
 
 function touchkeyLeft() {
+	movingSound.play();
 	console.log("ArrowLeft");
 	inputdir.x = -1;
 	inputdir.y = 0;
@@ -159,6 +161,7 @@ function touchkeyLeft() {
 document.getElementById("keyRight").addEventListener("touchstart", touchkeyRight);
 
 function touchkeyRight() {
+	movingSound.play();
 	console.log("ArrowRight");
 	inputdir.x = 1;
 	inputdir.y = 0;
@@ -166,6 +169,7 @@ function touchkeyRight() {
 document.getElementById("keyDown").addEventListener("touchstart", touchkeyDown);
 
 function touchkeyDown() {
+	movingSound.play();
 	console.log("ArrowDown");
 	inputdir.x = 0;
 	inputdir.y = 1;
