@@ -126,3 +126,13 @@ p{
 	margin-bottom: 100px;
 }
 }
+@media(max-width:426px){
+#touchkeys{
+	position: relative;
+	top: -10%;
+}
+#board{
+	width: 70vmin;
+	height: 70vmin;
+}
+}
