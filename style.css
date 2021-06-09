@@ -7,7 +7,7 @@
 	padding: 0;
 }
 body{
-	background-color: rgb(21, 36, 105);
+	background-color: rgb(7, 46, 219);
 	overflow: hidden;
 }
 
@@ -34,7 +34,7 @@ p{
 	color: #fff;
 }
 .body {
-	background-color: rgb(21, 36, 105);
+	background-color: rgb(7, 46, 219);
 	width: 100vw;
 	height: 100vh;
 	display: grid;
@@ -53,6 +53,7 @@ p{
 	display: grid;
 	grid-template-rows: repeat(19, 1fr);
 	grid-template-columns: repeat(19, 1fr);
+	box-shadow: 0px 1px 8px #000;
 }
 
 #scoreboard{
@@ -65,21 +66,21 @@ p{
 	width: 130px;
 	border: 2px solid #fff;
 	background-color: rgb(51, 32, 6);
+	box-shadow: 0px 1px 8px #000;
 }
 
 .snake{
 	background-color: #a60823 ;
-	border-radius: 30%;;
-	border: 2px outset rgb(196, 82, 82);
+	border-radius: 37%;;
+	border: 2px outset #360911;
 	box-shadow: 0px 2px 10px rgb(155, 74, 74);
 }
 
 .snakehead{
-	background: linear-gradient(rgb(243, 126, 126), red, rgb(243, 126, 126));
+	background: linear-gradient(rgb(143, 80, 80), rgb(190, 52, 52), rgb(143, 80, 80));
 	border-radius: 30%;
 	transform:  scale(1.2);
-	border: .25vmin solid #fff;
-	box-shadow: 0px 2px 10px rgb(158, 74, 74);
+	border: 2px outset #ffc3cf;
 	
 }
 @keyframes colorchange {
@@ -97,13 +98,15 @@ p{
 	display: none;
 }
 .material-icons{
-	border:0;
+	border: 0;
 	font-size: 55px;
 	color: white;
-	background-color: rgb(36, 29, 29);
+	background-color: rgb(219, 17, 17);
 	border-radius: 5px;
 	outline: none;
+	box-shadow: 0px 1px 8px #000;
 }
+
 #keyUp{
 	transform: translate(82.5px,-58.67px);
 }
@@ -122,6 +125,7 @@ body{
 	overflow-y: auto;
 	overflow-x: hidden;
 }
+
 #touchkeys{
 	display: flex;
 	justify-content: center;
@@ -137,8 +141,5 @@ body{
 #board{
 	width: 70vmin;
 	height: 70vmin;
-}
-body{
-	overflow:auto;
 }
 }
