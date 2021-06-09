@@ -40,11 +40,11 @@ function Collide(snake){
 		if(snake[i].x === snake[0].x && snake[i].y === snake[0].y){
 			return true;
 		}
+	}
 		//if bump in wall
 		if(snake[0].x >= 19 || snake[0].x <= 0 || snake[0].y>=19 || snake[0].y <=0){
 			return true;
 		}
-	}
 }
 
 
