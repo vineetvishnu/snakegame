@@ -118,7 +118,9 @@ p{
 }
 
 @media(max-width:769px){
-	
+body{
+	overflow:auto;
+}
 #touchkeys{
 	display: flex;
 	justify-content: center;
@@ -134,5 +136,8 @@ p{
 #board{
 	width: 70vmin;
 	height: 70vmin;
+}
+body{
+	overflow:auto;
 }
 }
