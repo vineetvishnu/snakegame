@@ -119,7 +119,8 @@ p{
 
 @media(max-width:769px){
 body{
-	overflow:auto;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 #touchkeys{
 	display: flex;
