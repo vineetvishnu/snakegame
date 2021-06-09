@@ -97,23 +97,23 @@ p{
 	display: none;
 }
 .material-icons{
-	font-size: 50px;
+	font-size: 55px;
 	color: white;
 	background-color: rgb(36, 29, 29);
 	border-radius: 5px;
 	outline: none;
 }
 #keyUp{
-	transform: translate(81px,-58px);
+	transform: translate(89px,-62px);
 }
 #keyLeft{
-	transform: translate(-33px, 0px);
+	transform: translate(-39px, 0px);
 }
 #keyRight{
-	transform: translate(33px, 0px);
+	transform: translate(39px, 0px);
 }
 #keyDown{
-	transform: translate(-81px, 58px);
+	transform: translate(-89px, 62px);
 }
 
 
