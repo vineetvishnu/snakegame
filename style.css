@@ -101,7 +101,7 @@ p{
 	color: white;
 	background-color: rgb(36, 29, 29);
 	margin: 13px;
-	border-radius: 50%;
+	border-radius: 5px;
 	outline: none;
 }
 #keyUp{
